@@ -79,8 +79,17 @@ header {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  /* align-items: center; */
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.nav__item {
+  margin-right: 2.5%;
+}
+
+.nav__item:last-of-type {
+  margin-right: 0;
 }
 
 .nav__link {
