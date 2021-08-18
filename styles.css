@@ -50,8 +50,8 @@ h1 {
 }
 
 .container {
-  width: 80%;
-  max-width: 1100px;
+  inline-size: 80%;
+  max-inline-size: 1100px;
   margin: 0 auto;
 }
 
@@ -142,4 +142,59 @@ header {
   text-align: center;
   color: #fff;
   background-color: #136c72;
+}
+
+@media (max-width: 45rem) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .row {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .nav,
+  .btn,
+  .hero__text,
+  .hero__img,
+  .primary-content,
+  .sidebar {
+    inline-size: 100%;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    max-inline-size: 80%;
+  }
+
+  .nav__item {
+    margin-right: 0.25rem;
+  }
+
+  .btn {
+    display: block;
+    padding: 0.25rem;
+    font-size: 1rem;
+    justify-self: center;
+    text-align: center;
+    max-inline-size: 12rem;
+    margin: 0 auto;
+  }
+
+  .hero__img {
+    margin: 2rem 0;
+  }
+
+  .hero {
+    padding: 1.5rem 0;
+  }
 }
